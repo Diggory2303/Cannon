@@ -23,8 +23,9 @@ def tap(x, y):
     if not inside(ball):
         ball.x = -199
         ball.y = -199
-        speed.x = (x + 200) / 25
-        speed.y = (y + 200) / 25
+        #Aqui se modifica para que la velocidad del projectil sea de acuerdo a tus preferencias en el eje X y Y
+        speed.x = (x + 300) / 25
+        speed.y = (y + 300) / 25
 
 
 def inside(xy):
@@ -74,7 +75,9 @@ def move():
         if not inside(target):
             return
 
-    ontimer(move, 50)
+    # Modificar el segundo parametro de esta funcion, permite que se recarge mas rapido la funcion move(), 
+    # haciendo que los balones vayan mas rapido
+    ontimer(move, 15)
 
 
 setup(420, 420, 370, 0)
