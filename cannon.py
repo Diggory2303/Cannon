@@ -1,11 +1,8 @@
-"""Cannon, hitting targets with projectiles.
-
-Exercises
-
-1. Keep score by counting target hits.
-2. Vary the effect of gravity.
-3. Apply gravity to the targets.
-4. Change the speed of the ball.
+"""
+Juego: Cannon
+Programador 1: Annya Paulina Verduzco Meza / A01650668
+Programador 2: Diego Isunza Garciacano / A01652067
+Fecha: 10 / mayo / 2022
 """
 
 from random import randrange
@@ -73,7 +70,8 @@ def move():
 
     for target in targets:
         if not inside(target):
-            return
+            target.x = 200
+            #Modificar para que el juego no termine
 
     # Modificar el segundo parametro de esta funcion, permite que se recarge mas rapido la funcion move(), 
     # haciendo que los balones vayan mas rapido
