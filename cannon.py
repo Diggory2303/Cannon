@@ -70,8 +70,8 @@ def move():
 
     for target in targets:
         if not inside(target):
-            target.x = 200
-            #Modificar para que el juego no termine
+            target.x = 500
+            #Modificar para que el juego no termine, que regrese mas targets 
 
     # Modificar el segundo parametro de esta funcion, permite que se recarge mas rapido la funcion move(), 
     # haciendo que los balones vayan mas rapido
